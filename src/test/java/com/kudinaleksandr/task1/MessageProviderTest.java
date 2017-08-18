@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  */
 public class MessageProviderTest {
 
-    private static final Locale locale = Locale.getDefault();
+    private static final Locale locale = new Locale("ru", "RU");
     private static final Locale enLocale = new Locale("en", "US");
     private static final MyControl control = new MyControl();
     private static ResourceBundle  rb = ResourceBundle.getBundle("bundles.GreetingBundle", locale, control);
