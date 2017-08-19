@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * Created by homeuser on 19.08.2017.
+ * Created by KUDIN ALEKSANDR on 19.08.2017.
  */
 public class FrameProvider extends JDialog{
 

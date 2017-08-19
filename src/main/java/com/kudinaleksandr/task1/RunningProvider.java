@@ -8,7 +8,7 @@ import java.util.ResourceBundle;
 import java.util.logging.*;
 
 /**
- * Created by homeuser on 14.08.2017.
+ * Created by KUDIN ALEKSANDR on 14.08.2017.
  */
 public class RunningProvider {
 
