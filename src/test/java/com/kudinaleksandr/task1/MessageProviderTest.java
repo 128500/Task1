@@ -2,7 +2,6 @@ package com.kudinaleksandr.task1;
 
 import org.junit.Test;
 
-import java.time.LocalDateTime;
 import java.util.Locale;
 import java.util.ResourceBundle;
 

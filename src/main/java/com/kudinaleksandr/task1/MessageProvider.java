@@ -1,6 +1,5 @@
 package com.kudinaleksandr.task1;
 
-import java.time.LocalDateTime;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 

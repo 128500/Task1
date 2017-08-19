@@ -1,6 +1,6 @@
 package com.kudinaleksandr.task1;
 
-import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Locale;
@@ -26,16 +26,19 @@ public class RunningProvider {
             } catch (IOException ex) {
                 log.log(Level.SEVERE, "Couldn't create log file handler", ex);
             }
-        }
+       }
 
         MessageProvider mp = new MessageProvider();
         MyControl control = new MyControl();
-        Locale locale = Locale.getDefault();
-        System.out.println(locale.toString());
-        int hour = LocalDateTime.now().getHour();
-        ResourceBundle currentLocale = ResourceBundle.getBundle("bundles.GreetingBundle", locale, control);
-        String message = mp.getMessage(currentLocale, hour);
-        JOptionPane.showMessageDialog(null, message, "Greeting message", JOptionPane.OK_OPTION);
 
+        Locale locale = Locale.getDefault();
+
+        int hour = LocalDateTime.now().getHour();
+
+        ResourceBundle currentLocale = ResourceBundle.getBundle("bundles.GreetingBundle", locale, control);
+
+        String message = mp.getMessage(currentLocale, hour);
+
+        EventQueue.invokeLater(() -> new FrameProvider(null, message));
     }
 }
